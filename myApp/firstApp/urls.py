@@ -4,8 +4,7 @@ from . import views
 
 urlpatterns = [
     path('',views.Home,name="home"),
-    path('123',views.calling,name="calling"),
-    path('123/a',views.aCalling,name="aCalling"),
+    path('<int:user_id>',views.finddetails,name='detail_with_id')
 
 
 
